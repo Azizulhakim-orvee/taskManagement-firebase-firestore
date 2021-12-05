@@ -1,17 +1,12 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "@firebase/firestore";
 
-
 import {
   getAuth,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
-  onAuthStateChanged,
   signOut,
-  GoogleAuthProvider,
-  signInWithPopup,
 } from "firebase/auth";
-import { useEffect, useState } from "react";
 
 const firebaseConfig = {
   apiKey: "AIzaSyA7nN6I76Rav-id74h1YvyRpQNuIqjTQ54",
@@ -39,6 +34,3 @@ export const signIn = (email, password) => {
 export const logOut = (email, password) => {
   return signOut(auth);
 };
-
-
-

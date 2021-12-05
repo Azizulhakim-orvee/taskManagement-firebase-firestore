@@ -14,7 +14,6 @@ const Home = () => {
 
   const { setLoading, loading } = SessionState();
 
-
   const singInWithGoogle = async () => {
     try {
       setLoading(true);
@@ -35,11 +34,20 @@ const Home = () => {
     <div className="bg-gray-200 gap-8 font-caveat flex-col text-center flex items-center h-screen justify-center">
       <h1 className="text-yellow-500 text-6xl">
         Task management App with firestore database
+        <br />{" "}
+        <span className="text-2xl text-opacity-30 font-thin text-gray-600">
+          developed by Azizul Hakim
+        </span>
       </h1>
       <div className="mb-10">{loading && <CircleLoader />}</div>
       <GoogleButton onClick={singInWithGoogle} />
 
       <SignIn />
+
+      <div className=" bg-yellow-100 font-sans opacity-70">
+        <p>Demo Email: test@test.com</p>
+        <p>Demo Password: 654321</p>
+      </div>
     </div>
   );
 };

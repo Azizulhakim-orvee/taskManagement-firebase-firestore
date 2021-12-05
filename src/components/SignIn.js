@@ -71,7 +71,7 @@ const SignIn = () => {
           placeholder="Email"
           type="email"
           onFocus={() => setClick(!click)}
-          className="border-gray-300 focus:ring-black focus:border-gray-400 rounded-md mr-2 text-center focus:scale-105 transform transition-all"
+          className="border-gray-300 focus:ring-black focus:border-gray-400 rounded-md mr-2 text-center focus:scale-105 transform transition-all font-mono"
         />
 
         <input
@@ -79,7 +79,7 @@ const SignIn = () => {
           placeholder="Password"
           type="password"
           onFocus={() => setClick(!click)}
-          className="border-gray-300 focus:ring-black focus:border-gray-400 rounded-md text-center focus:scale-105 transform transition-all"
+          className="border-gray-300 focus:ring-black focus:border-gray-400 rounded-md text-center focus:scale-105 transform transition-all font-mono"
         />
       </div>
 
